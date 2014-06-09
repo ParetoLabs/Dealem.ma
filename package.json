@@ -7,10 +7,6 @@
     "grunt-cli": "~0.1.13",
     "grunt": "~0.4.5",
     "gzippo": "~0.2.0",
-    "load-grunt-tasks": "^0.4.0"
-  },
-  "devDependencies": {
-    "grunt": "^0.4.1",
     "grunt-autoprefixer": "^0.7.3",
     "grunt-concurrent": "^0.5.0",
     "grunt-contrib-clean": "^0.5.0",
