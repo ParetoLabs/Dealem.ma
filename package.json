@@ -67,7 +67,7 @@
   },
   "scripts": {
     "test": "grunt test",
-    "postinstall": "grunt serve"
+    "postinstall": "grunt serve --force"
   },
   "main": "web.js",
   "directories": {
