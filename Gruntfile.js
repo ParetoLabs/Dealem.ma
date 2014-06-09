@@ -375,9 +375,21 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    shell : {
+      'git-add-dist' : {
+        command: 'git add'
+      },
+      'git-commit-build' : {
+        command: 'git commit -am "build"'
+      },
+      'heroku' : {
+        command: 'git push heroku master'
+      }
     }
   });
-  
+
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
@@ -420,7 +432,9 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'shell:git-add-dist',
+    'shell:git-commit-build'
   ]);
 
   grunt.registerTask('default', [
@@ -428,4 +442,8 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('heroku',
+    ['build', 'shell:heroku']);
+
 };
