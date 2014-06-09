@@ -115,3 +115,8 @@ and compress images.
 
 Produced files will be saved to `./dist`. All files in this folder can be used
 as standalone project without the need of every development files.
+
+## Setting up Heroku Deployment
+http://www.sitepoint.com/deploying-yeomanangular-app-heroku/
+
+
