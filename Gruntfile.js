@@ -378,7 +378,6 @@ module.exports = function (grunt) {
     }
   });
 
-
   // version and deploy production code to heroku
   buildcontrol: {
     options: {
