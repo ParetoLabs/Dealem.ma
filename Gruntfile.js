@@ -393,9 +393,7 @@ module.exports = function (grunt) {
             branch: 'master'
         }
     }
- }
-  
-  //grunt deploy task
+  }
   grunt.registerTask('deploy', ['buildcontrol']);
   
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
