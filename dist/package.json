@@ -1,0 +1,22 @@
+{
+  "name": "Dealem.ma",
+  "version": "0.0.0",
+  "description": "Demo Dealem.ma App",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ParetoLabs/Dealem.ma/"
+  },
+  "keywords": [
+    "Dealem.ma"
+  ],
+  "author": "Pareto Labs LLC",
+  "license": "ISC",
+  "dependencies": {
+    "gzippo": "^0.2.0",
+    "express": "^4.4.1"
+  }
+}
