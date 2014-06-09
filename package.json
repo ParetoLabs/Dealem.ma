@@ -66,8 +66,8 @@
     "npm": ">=1.2.10"
   },
   "scripts": {
-    "test": "grunt test",
-    "postinstall": "grunt serve --force"
+    "test": "grunt test"
+
   },
   "main": "web.js",
   "directories": {
