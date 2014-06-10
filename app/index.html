@@ -8,10 +8,11 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <!-- endbuild -->
   </head>
   <body ng-app="dealemmaApp">
@@ -20,22 +21,38 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">dealemma</h3>
-      </div>
+    <!-- header -->
+    <div id="header" class="navbar navbar-default" role="navigation">
+      <div class="page-wrapper">
 
-      <div ng-view=""></div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <div class="navbar-collapse collapse">          
+
+          <div class="navbar-right">
+            <ul class="nav navbar-nav">
+              <li><a ng-href="#/download">Download</a></li>
+              <li><a ng-href="#/features">Features</a></li>
+              <li><a ng-href="#/aboutus">Abuout Us</a></li>
+              <li><a ng-href="#/blog">Blog</a></li>
+              <li class="active"><a ng-href="#/login">Log In</a></li>
+            </ul>
+          </div>
+          
+        </div>
       </div>
-    </div>
+    </div><!--/.header-->
+
+    <!-- Container -->
+    <div ng-view=""></div>    
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

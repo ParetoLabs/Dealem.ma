@@ -1,0 +1,142 @@
+/*
+* Page layout styles.
+* version: 1.0
+* author: Marijn
+*/
+
+/* bootstrap override styles */
+.navbar {
+	border: 0;
+	border-radius: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #010101;
+}
+
+.navbar-toggle {
+	float: left;
+	margin-left: 10px;
+	margin-right: 0;
+}
+
+hr {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border-color: #d3d3d3;
+}
+
+.btn-block + .btn-block {
+	margin-top: 10px;
+}
+
+/*Header styles */
+#header {
+	background-color: $bodyBackgroundColor;
+}
+
+.page-wrapper {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.content-container {
+		
+}
+
+.logo {
+	img {
+		width: 100%;
+	}
+
+	.logo-desc {
+		margin-top: 5px;
+		margin-bottom: 35px;
+		text-align: center;
+	}
+}
+
+.content-signupform {
+	@include make-row();
+	margin-bottom: 15px;	
+	text-align: center;
+
+	.btn-default {
+		text-align: left; 
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	input[type="email"],
+	input[type="password"] {
+		padding: 6px 12px;
+		border-radius : 4px;
+		border: 1px solid #ccc;
+	}
+
+	p.text-muted {
+		margin-top: 5px;
+		padding: 0 15px;
+	}
+}
+
+// Block input
+// --------------------------------------------------
+.input-block {
+	display: block;
+	width: 100%;
+}
+
+.input-block + .input-block, 
+.input-block + .btn-block {
+	margin-top: 5px;
+}
+
+// Product styles
+// --------------------------------------------------
+.product {
+	padding: 5px;
+	border: 1px solid #d3d3d3;	
+	margin: 0;
+	margin-bottom: 20px;
+
+	.product-header {
+		line-height: 70px;
+
+		.product-info {
+			vertical-align: text-bottom;
+			width: 70%;
+			display: inline-block;
+
+			img {
+				max-width: 70px;
+			}
+
+			h3 {
+				display: inline-block;
+				font-size: 16px;
+			}
+		}
+
+		.product-price {
+			vertical-align: text-bottom;
+			width: 25%;
+			display: inline-block;
+			font-size: 36px;
+			font-weight: 700;
+		}
+	}
+	.product-footer {
+		@extend .clearfix;
+		font-size: 12px;
+		.expires-date {
+			@extend .pull-left;
+			color: #999;
+		}
+		.offer-details {
+			@extend .pull-right;
+			color: #d3d3d3;
+		}
+	}
+}
