@@ -60,7 +60,7 @@ body {
 }
 
 .main{
-	background: url(../images/background.png) no-repeat top center fixed #f7f7f7; 
+	background: url(../images/background.png) no-repeat bottom center fixed #f7f7f7; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -267,8 +267,9 @@ body {
 		.frame-content {
 			padding: 3px;
 			.frame-product {
-				border: 1px solid $darkGray;
-				padding: 2px;				
+				//border: 1px solid $darkGray;
+				background-color: couponBackgroundColor;
+        padding: 2px;				
 
 				.product-header {
 					@extend .clearfix;
@@ -290,6 +291,7 @@ body {
 						display: inline-block;
 						font-size: 24px;
 						font-weight: bold;
+            color: $accentColor;
 						margin-top: 10px;
 					}
 				}
