@@ -224,6 +224,7 @@ body {
 		height: 14px;
 		background: url(../images/statusbar.png) no-repeat;
 		background-size: cover;
+    background-color: $primaryColor;
 	}
 
 	.frame {
@@ -270,7 +271,7 @@ body {
 				//border: 1px solid $darkGray;
 				background-color: $couponBackgroundColor;
         padding: 2px;
-        box-shadow: 0px 2px 4px $lightGray;
+        box-shadow: 0px 2px 2px $lightShadow;
 
 				.product-header {
 					@extend .clearfix;
