@@ -240,6 +240,7 @@ body {
 			height: 36px;
 			width: 100%;
 			background-color: $titleBarBackgroundColor;
+      box-shadow: 0 0px 2px $lightShadow;
 
 			.nav-toggle {
 				float: left;
