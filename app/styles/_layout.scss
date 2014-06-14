@@ -57,6 +57,7 @@ body {
 	font-family: Verdana, Geneva, sans-serif;
 	color: $darkGray;
 	background-color: $bodyBackgroundColor;
+	padding-top: 70px;
 }
 
 .main{
@@ -268,12 +269,11 @@ body {
 			padding: 3px;
 			.frame-product {
 				border: 1px solid $darkGray;
-				padding: 2px;				
+				padding: 6px;				
 
 				.product-header {
 					@extend .clearfix;
-					margin-top: 5px;
-					margin-bottom: 25px;
+					margin-bottom: 24px;
 
 					.product-info {
 						float: left;
