@@ -61,7 +61,7 @@ body {
 }
 
 .main{
-	background: url(../images/background.png) no-repeat top center fixed #f7f7f7; 
+	background: url(../images/background.png) no-repeat bottom center fixed #f7f7f7; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -225,6 +225,7 @@ body {
 		height: 14px;
 		background: url(../images/statusbar.png) no-repeat;
 		background-size: cover;
+    	background-color: $primaryColor;
 	}
 
 	.frame {
@@ -240,6 +241,7 @@ body {
 			height: 36px;
 			width: 100%;
 			background-color: $titleBarBackgroundColor;
+      		box-shadow: 0 1px 1px $lightShadow;
 
 			.nav-toggle {
 				float: left;
@@ -266,10 +268,13 @@ body {
 			}
 		}
 		.frame-content {
-			padding: 3px;
+			padding: 2px;
+			
 			.frame-product {
 				border: 1px solid $darkGray;
-				padding: 6px;				
+				background-color: $couponBackgroundColor;
+		        padding: 6px;
+		        box-shadow: 0px 2px 2px $lightShadow;
 
 				.product-header {
 					@extend .clearfix;
@@ -290,6 +295,7 @@ body {
 						display: inline-block;
 						font-size: 24px;
 						font-weight: bold;
+            			color: $accentColor;
 						margin-top: 10px;
 					}
 				}
