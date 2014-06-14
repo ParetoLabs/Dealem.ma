@@ -271,7 +271,7 @@ body {
 			padding: 2px;
 
 			.frame-product {
-				border: 1px solid $darkGray;
+				// border: 1px solid $darkGray;
 				background-color: $couponBackgroundColor;
 		        padding: 6px;
 		        box-shadow: 0px 2px 2px $lightShadow;
@@ -279,15 +279,20 @@ body {
 				.product-header {
 					@extend .clearfix;
 					margin-bottom: 24px;
+					margin-top: 4px;
 
 					.product-info {
 						float: left;
+						width: 70%;
+
 						img {
 							max-width: 50px;
+							float: left;
 						}
 						h3 {
-							display: inline-block;
+							margin-left: 55px;
 							font-size: 14px;
+							margin-top: 10px;
 						}
 					}
 					.price {
