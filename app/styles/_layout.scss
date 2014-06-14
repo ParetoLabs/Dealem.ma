@@ -269,7 +269,7 @@ body {
 		}
 		.frame-content {
 			padding: 2px;
-			
+
 			.frame-product {
 				border: 1px solid $darkGray;
 				background-color: $couponBackgroundColor;
@@ -308,6 +308,10 @@ body {
 					color: $lightGray;
 					font-size: 11px;
 					margin-bottom: 10px;
+
+					.text-offer {
+						color: $primaryColor;
+					}
 				}
 
 				+ .frame-product {
