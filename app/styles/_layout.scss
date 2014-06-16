@@ -312,12 +312,13 @@ body {
 					@extend .clearfix;
 					color: $lightGray;
 					font-size: 11px;
-					margin-bottom: 10px;
 
 					.text-offer {
 						color: $primaryColor;
 			            padding: 4px;
-			            border: 1px solid $lightGray;
+			            padding-top: 2px;
+			            padding-bottom: 2px;
+			            border: 1px solid $lightBorder;
 					}
 				}
 
