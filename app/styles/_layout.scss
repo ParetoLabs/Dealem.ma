@@ -306,7 +306,7 @@ body {
 				}
 				p.text-muted {
 					font-size: 12px;
-					margin-bottom: 20px;
+					// margin-bottom: 20px;
 				}
 				.product-footer {
 					@extend .clearfix;
@@ -316,8 +316,8 @@ body {
 
 					.text-offer {
 						color: $primaryColor;
-            padding: 4px;
-            border: 1px solid $lightGray;
+			            padding: 4px;
+			            border: 1px solid $lightGray;
 					}
 				}
 

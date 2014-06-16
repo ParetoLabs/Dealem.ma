@@ -38,6 +38,10 @@ and (max-width : 479px) {
 			}
 		}
 	}
+
+	.visible-xs-portrait {
+		display: block;
+	}
 }
  
 /***** ANDROID DEVICES *****/
