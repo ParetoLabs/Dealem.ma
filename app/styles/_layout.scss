@@ -231,7 +231,7 @@ body {
     	background-color: $primaryColor;
 	}
 
-	.frame {
+	.app-frame {
 		position: absolute;
 		top: 97px;
 		left: 22px;
@@ -239,7 +239,7 @@ body {
 		height: 392px;
 		background-color: $bodyBackgroundColor;
 
-		.frame-header {
+		.app-titlebar {
 			position: relative;
 			height: 36px;
 			width: 100%;
@@ -270,21 +270,21 @@ body {
 				}		
 			}
 		}
-		.frame-content {
+		.app-content {
 			padding: 6px;
 
-			.frame-product {
+			.app-offer {
 				// border: 1px solid $darkGray;
 				background-color: $couponBackgroundColor;
 		        padding: 6px;
 		        box-shadow: 0px 2px 2px $lightShadow;
 
-				.product-header {
+				.offer-header {
 					@extend .clearfix;
 					margin-bottom: 12px;
 					margin-top: 4px;
 
-					.product-info {
+					.offer-title {
 						float: left;
 						width: 70%;
 
@@ -295,10 +295,10 @@ body {
 						h3 {
 							margin-left: 55px;
 							font-size: 14px;
-							margin-top: 10px;
+							margin-top: 2px;
 						}
 					}
-					.price {
+					.offer-amount {
 						float: right;
 						display: inline-block;
 						font-size: 24px;
@@ -307,17 +307,17 @@ body {
 						margin-top: 10px;
 					}
 				}
-				p.text-muted {
+				p.btn-footnote {
 					font-size: 12px;
 					min-height: 50px;
 					// margin-bottom: 20px;
 				}
-				.product-footer {
+				.offer-footer {
 					@extend .clearfix;
 					color: $lightGray;
 					font-size: 11px;
 
-					.text-offer {
+					.btn-offer-details {
 						color: $primaryColor;
 			            padding: 4px;
 			            padding-top: 2px;
@@ -326,7 +326,7 @@ body {
 					}
 				}
 
-				+ .frame-product {
+				+ .app-offer {
 					margin-top: 8px;
 				}
 			}
