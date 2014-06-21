@@ -65,8 +65,10 @@ module.exports = function (grunt) {
     connect: {
       options: {
         port: 3000,
-        // Change this to 'localhost' to access the server locally.
-        hostname: 'localhost',
+        // Use this to access the server locally.
+        //hostname: 'localhost',
+        //Use this to access server on Nitrous.io
+        hostname: '0.0.0.0',
         livereload: 35729
       },
       livereload: {
@@ -344,6 +346,11 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>',
           src: 'bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/*',
           dest: '<%= yeoman.dist %>'
+        }, {
+          expand: true,
+          cwd: '<%= yeoman.app %>',
+          dest: '<%= yeoman.dist %>',
+          src: 'bower_components/font-awesome/**',
         }]
       },
       styles: {

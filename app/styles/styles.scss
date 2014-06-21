@@ -2,7 +2,6 @@
 
 /* Vendors */
 $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-// $fa-font-path: "../bower_components/font-awesome/fonts";
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
@@ -16,3 +15,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 
 /* Responsive */
 @import "responsive";
+
+/* Font Awesome */
+$fa-font-path: "../bower_components/font-awesome/fonts";
+@import "../bower_components/font-awesome/scss/font-awesome";

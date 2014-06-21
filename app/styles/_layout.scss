@@ -28,6 +28,7 @@ hr {
 
 .btn {
 	border: none;
+  
 
 	&.btn-primary {
 		background-color: $primaryColor;	
@@ -38,6 +39,7 @@ hr {
 	}
 
 	&.btn-warning {
+    margin-bottom: 10px;
 		background-color: $accentColor;
 		&:hover {
 			background-color: #ec971f;
@@ -47,6 +49,7 @@ hr {
 
 .text-muted {
 	color: $medGray;
+  font-size: 12px;
 }
 
 .btn-block + .btn-block {
@@ -116,7 +119,7 @@ body {
 
 	p.text-muted {
 		margin-top: 5px;
-		padding: 0 15px;
+		//padding: 0 15px;
 	}
 }
 
