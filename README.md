@@ -120,3 +120,5 @@ as standalone project without the need of every development files.
 http://www.sitepoint.com/deploying-yeomanangular-app-heroku/
 
 
+## App Demo
+http://dealemma.herokuapp.com/

@@ -21,6 +21,10 @@ and (min-width : 321px) {
 			}
 		}
 	}
+
+	.visible-xs-portrait {
+		display: none;
+	}
 }
 
 /* All Smartphones in portrait ----------- */
@@ -40,7 +44,7 @@ and (max-width : 479px) {
 	}
 
 	.visible-xs-portrait {
-		display: block;
+		display: block !important;
 	}
 }
  
@@ -152,7 +156,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio: 1)  {
-/* YOUR STYLE GOES HERE */
+
 }
 
 /* iPad 1 & 2 in portrait ----------- */
