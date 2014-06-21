@@ -28,6 +28,7 @@ hr {
 
 .btn {
 	border: none;
+  
 
 	&.btn-primary {
 		background-color: $primaryColor;	
@@ -38,6 +39,7 @@ hr {
 	}
 
 	&.btn-warning {
+    margin-bottom: 10px;
 		background-color: $accentColor;
 		&:hover {
 			background-color: #ec971f;
