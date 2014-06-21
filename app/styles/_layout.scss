@@ -47,6 +47,7 @@ hr {
 
 .text-muted {
 	color: $medGray;
+  font-size: 12px;
 }
 
 .btn-block + .btn-block {
@@ -116,7 +117,7 @@ body {
 
 	p.text-muted {
 		margin-top: 5px;
-		padding: 0 15px;
+		//padding: 0 15px;
 	}
 }
 
