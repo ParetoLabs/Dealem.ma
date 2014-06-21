@@ -47,7 +47,7 @@ hr {
 	}
 }
 
-.text-muted {
+.btn-footnote {
 	color: $medGray;
   font-size: 12px;
 }
@@ -137,17 +137,17 @@ body {
 
 // Product styles
 // --------------------------------------------------
-.product {
+.offer {
 	padding: 5px;
 	border: 1px solid #d3d3d3;	
 	margin: 0;
 	margin-bottom: 20px;
 
-	.product-header {
+	.offer-header {
 		@extend .clearfix;
 		line-height: 70px;
 
-		.product-info {
+		.offer-title {
 			vertical-align: text-bottom;
 			width: 70%;
 			display: inline-block;
@@ -162,7 +162,7 @@ body {
 			}
 		}
 
-		.product-price {
+		.offer-amount {
 			vertical-align: text-bottom;
 			width: 25%;
 			display: inline-block;
@@ -170,10 +170,10 @@ body {
 			font-weight: 700;
 		}
 	}
-	.product-footer {
+	.offer-footer {
 		@extend .clearfix;
 		font-size: 12px;
-		.expires-date {
+		.expiration-date {
 			@extend .pull-left;
 			color: $lightGray;
 		}
@@ -228,7 +228,7 @@ body {
 		height: 14px;
 		background: url(../images/statusbar.png) no-repeat;
 		background-size: cover;
-    	background-color: $primaryColor;
+    background-color: $primaryColor;
 	}
 
 	.app-frame {
@@ -304,7 +304,7 @@ body {
 						font-size: 24px;
 						font-weight: bold;
             			color: $accentColor;
-						margin-top: 10px;
+						margin-top: 8px;
 					}
 				}
 				p.btn-footnote {
