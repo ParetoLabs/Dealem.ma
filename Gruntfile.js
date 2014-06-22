@@ -68,7 +68,7 @@ module.exports = function (grunt) {
         // Use this to access the server locally.
         //hostname: 'localhost',
         //Use this to access server on Nitrous.io
-        hostname: '0.0.0.0',
+        hostname: 'localhost',
         livereload: 35729
       },
       livereload: {

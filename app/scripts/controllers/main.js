@@ -14,4 +14,8 @@ angular.module('dealemmaApp')
       'AngularJS',
       'Karma'
     ];
+    $scope.demo = {};
+    $scope.demo.doClick = function() {
+    	alert("clicked");
+    }
   });
