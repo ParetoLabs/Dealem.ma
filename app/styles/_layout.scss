@@ -47,7 +47,7 @@ hr {
 	}
 }
 
-.text-muted {
+.btn-footnote {
 	color: $medGray;
   font-size: 12px;
 }
@@ -137,17 +137,17 @@ body {
 
 // Product styles
 // --------------------------------------------------
-.product {
+.offer {
 	padding: 5px;
 	border: 1px solid #d3d3d3;	
 	margin: 0;
 	margin-bottom: 20px;
 
-	.product-header {
+	.offer-header {
 		@extend .clearfix;
 		line-height: 70px;
 
-		.product-info {
+		.offer-title {
 			vertical-align: text-bottom;
 			width: 70%;
 			display: inline-block;
@@ -162,7 +162,7 @@ body {
 			}
 		}
 
-		.product-price {
+		.offer-amount {
 			vertical-align: text-bottom;
 			width: 25%;
 			display: inline-block;
@@ -170,10 +170,10 @@ body {
 			font-weight: 700;
 		}
 	}
-	.product-footer {
+	.offer-footer {
 		@extend .clearfix;
 		font-size: 12px;
-		.expires-date {
+		.expiration-date {
 			@extend .pull-left;
 			color: $lightGray;
 		}
@@ -228,10 +228,10 @@ body {
 		height: 14px;
 		background: url(../images/statusbar.png) no-repeat;
 		background-size: cover;
-    	background-color: $primaryColor;
+    background-color: $primaryColor;
 	}
 
-	.frame {
+	.app-frame {
 		position: absolute;
 		top: 97px;
 		left: 22px;
@@ -239,7 +239,7 @@ body {
 		height: 392px;
 		background-color: $bodyBackgroundColor;
 
-		.frame-header {
+		.app-titlebar {
 			position: relative;
 			height: 36px;
 			width: 100%;
@@ -270,21 +270,21 @@ body {
 				}		
 			}
 		}
-		.frame-content {
+		.app-content {
 			padding: 6px;
 
-			.frame-product {
+			.app-offer {
 				// border: 1px solid $darkGray;
 				background-color: $couponBackgroundColor;
 		        padding: 6px;
 		        box-shadow: 0px 2px 2px $lightShadow;
 
-				.product-header {
+				.offer-header {
 					@extend .clearfix;
 					margin-bottom: 12px;
 					margin-top: 4px;
 
-					.product-info {
+					.offer-title {
 						float: left;
 						width: 70%;
 
@@ -295,29 +295,29 @@ body {
 						h3 {
 							margin-left: 55px;
 							font-size: 14px;
-							margin-top: 10px;
+							margin-top: 2px;
 						}
 					}
-					.price {
+					.offer-amount {
 						float: right;
 						display: inline-block;
 						font-size: 24px;
 						font-weight: bold;
             			color: $accentColor;
-						margin-top: 10px;
+						margin-top: 8px;
 					}
 				}
-				p.text-muted {
+				p.btn-footnote {
 					font-size: 12px;
 					min-height: 50px;
 					// margin-bottom: 20px;
 				}
-				.product-footer {
+				.offer-footer {
 					@extend .clearfix;
 					color: $lightGray;
 					font-size: 11px;
 
-					.text-offer {
+					.btn-offer-details {
 						color: $primaryColor;
 			            padding: 4px;
 			            padding-top: 2px;
@@ -326,7 +326,7 @@ body {
 					}
 				}
 
-				+ .frame-product {
+				+ .app-offer {
 					margin-top: 8px;
 				}
 			}
