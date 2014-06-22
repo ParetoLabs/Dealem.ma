@@ -82,10 +82,6 @@ body {
 	padding: 0;
 }
 
-.content-container {
-		
-}
-
 .logo {
 	padding-top: 20px;
 	img {
@@ -142,6 +138,7 @@ body {
 	border: 1px solid #d3d3d3;	
 	margin: 0;
 	margin-bottom: 20px;
+	background-color: #fff;
 
 	.offer-header {
 		@extend .clearfix;
@@ -150,6 +147,7 @@ body {
 		.offer-title {
 			vertical-align: text-bottom;
 			width: 70%;
+			float: left;
 			display: inline-block;
 
 			img {
@@ -164,7 +162,8 @@ body {
 
 		.offer-amount {
 			vertical-align: text-bottom;
-			width: 25%;
+			text-align: right;
+			float: right;
 			display: inline-block;
 			font-size: 36px;
 			font-weight: 700;
@@ -331,5 +330,25 @@ body {
 				}
 			}
 		}
+	}
+}
+
+#demo {
+	display: none;
+}
+
+.active-demo {
+	display: block !important;
+	// hide when iphone orientation to portrait
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		display: none !important;
+	}
+}
+
+.disable-main {
+	display: none;
+	// show when iphone orientation to portrait
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		display: block;
 	}
 }

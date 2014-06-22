@@ -16,6 +16,7 @@ angular.module('dealemmaApp')
     ];
     $scope.demo = {};
     $scope.demo.doClick = function() {
-    	alert("clicked");
+    	$('#main').addClass('disable-main');
+    	$('#demo').addClass('active-demo');
     }
   });
