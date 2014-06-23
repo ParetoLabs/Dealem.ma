@@ -45,6 +45,13 @@ hr {
 			background-color: #ec971f;
 		}
 	}
+
+	&.btn-offer {
+		font-size: 12px;
+		color: $primaryColor;
+		padding: 0;
+		@extend .simplebox;
+	}
 }
 
 .btn-footnote {
@@ -119,6 +126,13 @@ body {
 	}
 }
 
+.simplebox
+{
+  outline: none;
+  border:none !important;
+  box-shadow:none !important;
+}
+
 // Block input
 // --------------------------------------------------
 .input-block {
@@ -135,20 +149,32 @@ body {
 // --------------------------------------------------
 .offer {
 	padding: 5px;
-	border: 1px solid #d3d3d3;	
 	margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	background-color: #fff;
+	box-shadow: 0px 2px 2px $lightShadow;
+	margin-left: -10px;
+	margin-right: -10px;
 
 	.offer-header {
 		@extend .clearfix;
 		line-height: 70px;
+		margin-bottom: 15px;
 
+		@media only screen and (min-width : 321px) {
+			margin-bottom: 0px;			
+		}
+		
 		.offer-title {
 			vertical-align: text-bottom;
 			width: 70%;
 			float: left;
 			display: inline-block;
+
+			@media only screen and (min-width : 321px) {
+				width: 60%;
+			}
+
 
 			img {
 				max-width: 70px;
@@ -157,10 +183,12 @@ body {
 			h3 {
 				display: inline-block;
 				font-size: 16px;
+				margin-bottom: 0;
 			}
 		}
 
 		.offer-amount {
+			color: $accentColor;
 			vertical-align: text-bottom;
 			text-align: right;
 			float: right;
@@ -168,6 +196,11 @@ body {
 			font-size: 36px;
 			font-weight: 700;
 		}
+	}
+	p.btn-footnote {
+		font-size: 12px;
+		min-height: 50px;
+		// margin-bottom: 20px;
 	}
 	.offer-footer {
 		@extend .clearfix;
