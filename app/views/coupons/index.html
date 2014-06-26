@@ -1,0 +1,46 @@
+<div ng-controller="coupons.CouponsCtrl">
+	<!-- BEGUB: view -->
+	<div class="app-offer" ng-repeat="offer in offers">
+		<div class="offer-header">
+		    <div class="offer-title">
+		      <img ng-src="{{ offer.imagesSrc }}" alt="">
+		      <h3>{{ offer.offerTitle | characters:25 }}</h3>
+		    </div>
+		    <span class="offer-amount">{{ offer.offerAmount }}¢</span>
+		</div>
+		<p class="btn-footnote">{{ offer.offerSummary | characters: 80 }}</p>
+		<div class="offer-footer">
+		    <div class="expiration-date">Expires: {{ offer.expirationDate | date:'MM/dd/yyyy' }}</div>
+		    <div class="pull-right btn-offer-details">offer details</div>
+		</div>
+	</div>	
+</div>
+<!-- <div class="flip">
+  <div class="coupon">
+    <div class="app-offer front">
+      <div class="offer-header">
+        <div class="offer-title">
+          <img src="images/tide.png" alt="">
+          <h3>{{ 'Tide Liquid Laundry Detergent' | characters:25 }}</h3>
+        </div>
+        <span class="offer-amount">50¢</span>
+      </div>
+      <p class="btn-footnote">{{ 'Offer summary, purchase criteria, participating stores. Lorem ipsum dald kded.' | characters: 80 }}</p>
+      <div class="offer-footer">
+        <div class="pull-left">Expires: 12/31/14</div>
+        <div class="pull-right btn-offer-details">offer details</div>
+      </div>
+    </div>
+    <div class="app-offer back">
+      <div class="offer-header">
+        <h3>Deal Title</h3>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Aenean commodo ligula eget dolor, Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
+      <div class="offer-footer">
+        <div class="pull-right">
+          <a class="btn-offer-details">offer summary</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->

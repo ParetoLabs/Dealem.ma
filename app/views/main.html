@@ -15,36 +15,7 @@
             </div>
           </div><!--./Frame header -->
           <!--./Frame content -->
-          <div class="app-content">
-            <div class="app-offer">
-              <div class="offer-header">
-                <div class="offer-title">
-                  <img src="images/tide.png" alt="">
-                  <h3>{{ 'Tide Liquid Laundry Detergent' | characters:25 }}</h3>
-                </div>
-                <span class="offer-amount">50¢</span>
-              </div>
-              <p class="btn-footnote">{{ 'Offer summary, purchase criteria, participating stores. Lorem ipsum dald kded.' | characters: 80 }}</p>
-              <div class="offer-footer">
-                <div class="pull-left">Expires: 12/31/14</div>
-                <div class="pull-right btn-offer-details">offer details</div>
-              </div>
-            </div>
-            <div class="app-offer">
-              <div class="offer-header">
-                <div class="offer-title">
-                  <img src="images/cheer.png" alt="">
-                  <h3>{{ 'Cheer 2x Ultra Fresh Clean' | characters:25 }}</h3>
-                </div>
-                <span class="offer-amount">50¢</span>
-              </div>
-              <p class="btn-footnote">{{ 'Offer summary, purchase criteria, participating stores.' | characters: 80 }}</p>
-              <div class="offer-footer">
-                <div class="pull-left">Expires: 11/01/14</div>
-                <div class="pull-right btn-offer-details">offer details</div>
-              </div>
-            </div>
-          </div><!--./Frame content -->
+          <div class="app-content" ng-include=" 'views/coupons/index.html' "></div>
         </div>            
       </div>
     </div>

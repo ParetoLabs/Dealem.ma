@@ -305,11 +305,52 @@ body {
 		.app-content {
 			padding: 6px;
 
+			.flip {
+			  position: relative;
+			  @include perspective(800);
+			  width: 100%;
+			  height: 100%;
+
+			  .coupon {
+				&.flipped {
+					@include rotateX(-180deg);
+				}
+				@include transform-style(preserve-3d);
+				@include transition(0.5s);
+				width: 100%;
+				height: 100%;
+
+				.app-offer {
+				  position: absolute;
+				  z-index: 2;
+				  @include backface-visibility(hidden);
+				  width: 100%;
+				  height: 100%;
+				}
+
+				.front {
+				  position: absolute;
+				  z-index: 1;					
+				}
+				
+				.back {
+					@include rotateX(-180deg);		
+				}
+			  }
+			}
+
 			.app-offer {
 				// border: 1px solid $darkGray;
 				background-color: $couponBackgroundColor;
 		        padding: 6px;
 		        box-shadow: 0px 2px 2px $lightShadow;
+
+		        &.front {
+					background-color: $couponBackgroundColor;
+		        }
+		        &.back {
+		        	background-color: $accentColor;
+		        }
 
 				.offer-header {
 					@extend .clearfix;
@@ -342,12 +383,16 @@ body {
 				p.btn-footnote {
 					font-size: 12px;
 					min-height: 50px;
-					// margin-bottom: 20px;
 				}
 				.offer-footer {
 					@extend .clearfix;
 					color: $lightGray;
 					font-size: 11px;
+
+					.expiration-date {
+						@extend .pull-left;
+						line-height: 21px;
+					}					
 
 					.btn-offer-details {
 						color: $primaryColor;

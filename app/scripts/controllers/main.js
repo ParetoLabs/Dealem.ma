@@ -9,14 +9,20 @@
  */
 angular.module('dealemmaApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+
+    // // Apply the remote data to the local view model.
+    // function applyRemoteData( offers ) {
+
+    // }
+        
     $scope.demo = {};
+
     $scope.demo.doClick = function() {
+
     	$('#main').addClass('disable-main');
+
     	$('#demo').addClass('active-demo');
+
     }
+
   });
