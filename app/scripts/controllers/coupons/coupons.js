@@ -38,10 +38,15 @@ angular.module('dealemmaApp')
   	// var renderContext = requestContext.getRenderContext( "main.offers" );
 
   	$scope.offers = [];
+    $scope.offer = {};
 
   	// ---- Initialize. ----------------------------- //
 
   	// Load the "remote" data.
   	loadRemoteData();
+
+    $scope.offer.onTapEvent = function() {
+      alert('Touched me!');
+    }
 
   });

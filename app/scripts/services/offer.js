@@ -19,7 +19,7 @@ angular.module('dealemmaApp')
 
       if ( offer ) {
 
-        deferred.resolve( ng.copy( offer ) );
+        deferred.resolve( angular.copy( offer ) );
 
       } else {
 

@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'truncate'
+    'truncate',
+    'hmTouchEvents'
   ])
   .config(function ($routeProvider) {
     $routeProvider
