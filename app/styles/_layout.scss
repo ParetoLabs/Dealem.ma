@@ -330,8 +330,9 @@ body {
 
 				.expand-curl {
 					display: none;
+					@include transition(0.5s);
 				}
-				
+
 				.one-click, .double-click {
 					.expand-curl {
 						position: absolute;
@@ -342,7 +343,7 @@ body {
 						display: block;
 						border-top: 6px solid $accentColor;
 						border-left: 16px solid $couponBackgroundColor;
-						@include rotate(20deg);					
+						@include rotate(20deg);							
 					}
 				}
 
