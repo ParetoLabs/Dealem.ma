@@ -42,7 +42,8 @@ angular.module('dealemmaApp')
   	// var renderContext = requestContext.getRenderContext( "main.offers" );
 
   	$scope.offers = [];
-    $scope.offer = {};
+    $scope.primaryOffers = [];
+    $scope.sencondOffers = [];
 
   	// ---- Initialize. ----------------------------- //
 
@@ -50,3 +51,4 @@ angular.module('dealemmaApp')
   	loadRemoteData();
 
   });
+  
