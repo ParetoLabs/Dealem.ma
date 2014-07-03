@@ -13,7 +13,11 @@ angular.module('dealemmaApp')
   	// Apply the remote data to the local view model.
   	function applyRemoteData( offers ) {
 
-  		$scope.offers = offers;
+      $scope.primaryOffers = offers;
+
+  		$scope.secondOffers = offers;
+
+      $scope.offers = offers;
 
   	}
 
@@ -44,9 +48,5 @@ angular.module('dealemmaApp')
 
   	// Load the "remote" data.
   	loadRemoteData();
-
-    $scope.offer.onTapEvent = function() {
-      alert('Touched me!');
-    }
 
   });

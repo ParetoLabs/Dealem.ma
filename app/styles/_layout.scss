@@ -342,7 +342,7 @@ body {
 						height: 12px;
 						display: block;
 						border-top: 6px solid $accentColor;
-						border-left: 16px solid $couponBackgroundColor;
+						border-left: 16px solid transparent;
 						@include rotate(20deg);							
 					}
 				}
@@ -352,7 +352,7 @@ body {
 						width: 28px;
 						height: 20px;
 						border-top: 10px solid $accentColor;
-						border-left: 28px solid $couponBackgroundColor;
+						border-left: 28px solid transparent;
 					}
 				}
 
