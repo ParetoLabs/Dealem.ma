@@ -262,209 +262,209 @@ body {
 		background-size: cover;
     	background-color: $primaryColor;
 	}
+}
 
-	.app-frame {
-		position: absolute;
-		top: 97px;
-		left: 22px;
-		width: 228px;
-		height: 392px;
-		background-color: $bodyBackgroundColor;
+.app-frame {
+	position: absolute;
+	top: 97px;
+	left: 22px;
+	width: 228px;
+	height: 392px;
+	background-color: $bodyBackgroundColor;
 
-		.app-titlebar {
+	.app-titlebar {
+		position: relative;
+		height: 36px;
+		width: 100%;
+		background-color: $titleBarBackgroundColor;
+  		box-shadow: 0 1px 1px $lightShadow;
+
+		.nav-toggle {
+			float: left;
+			margin-left: 8px;
+			margin-right: 0;
 			position: relative;
-			height: 36px;
-			width: 100%;
-			background-color: $titleBarBackgroundColor;
-      		box-shadow: 0 1px 1px $lightShadow;
+			margin-right: 10px;
+			padding: 1px;
+			margin-top: 8px;
+			margin-bottom: 8px;
+			background-color: transparent;
+			background-image: none;		
 
-			.nav-toggle {
-				float: left;
-				margin-left: 8px;
-				margin-right: 0;
-				position: relative;
-				margin-right: 10px;
-				padding: 1px;
-				margin-top: 8px;
-				margin-bottom: 8px;
-				background-color: transparent;
-				background-image: none;		
+			.icon-bar {
+				background-color: #2fac9f;
+				display: block;
+				width: 20px;
+				height: 2px;
 
-				.icon-bar {
-					background-color: #2fac9f;
-					display: block;
-					width: 20px;
-					height: 2px;
-
-					+ .icon-bar {
-						margin-top: 3px;
-					}
-				}		
-			}
+				+ .icon-bar {
+					margin-top: 3px;
+				}
+			}		
 		}
-		.app-content {
-			padding: 6px;
+	}
+	.app-content {
+		padding: 6px;
 
-			// Stying for coupon in the iphone template
-			.app-offer {
-		  		float: left;
-			  	position: relative;
-			  	@include perspective(800);
-			  	width: 216px;
-			  	height: 167px;
-				background-color: $couponBackgroundColor;		        
-		        box-shadow: 0px 2px 2px $lightShadow;
-		        cursor: pointer;
+		// Stying for coupon in the iphone template
+		.app-offer {
+	  		float: left;
+		  	position: relative;
+		  	@include perspective(800);
+		  	width: 216px;
+		  	height: 167px;
+			background-color: $couponBackgroundColor;		        
+	        box-shadow: 0px 2px 2px $lightShadow;
+	        cursor: pointer;
 
-		        .coupon {
-		        	width: inherit;             /* width of each container*/
-					height: inherit;            /* height of each container*/
-		        	position: absolute;			/* instructure each container to obey the position absolutely*/
-					float: left;                /* float all the container so that they overlapped each other */
-					padding: 6px;
+	        .coupon {
+	        	width: inherit;             /* width of each container*/
+				height: inherit;            /* height of each container*/
+	        	position: absolute;			/* instructure each container to obey the position absolutely*/
+				float: left;                /* float all the container so that they overlapped each other */
+				padding: 6px;
 
-					 &.flipped {
+				&.flipped {
 
-						.front {
-							@include rotateY(180deg);
-						}
-
-						.back {
-							z-index: 3;
-							@include rotateY(0deg);
-						}
+					.front {
+						@include rotateY(180deg);
 					}
-		        }
 
+					.back {
+						z-index: 3;
+						@include rotateY(0deg);
+					}
+				}
+	        }
+
+			.expand-curl {
+				display: none;
+				@include transition(0.5s);
+			}
+
+			.one-click, .double-click {
 				.expand-curl {
-					display: none;
-					@include transition(0.5s);
-				}
-
-				.one-click, .double-click {
-					.expand-curl {
-						position: absolute;
-						right: 3px;
-						top: 3px;
-						width: 16px;
-						height: 12px;
-						display: block;
-						border-top: 6px solid $accentColor;
-						border-left: 16px solid transparent;
-						@include rotate(20deg);							
-					}
-				}
-
-				.double-click {
-					.expand-curl {
-						width: 28px;
-						height: 20px;
-						border-top: 10px solid $accentColor;
-						border-left: 28px solid transparent;
-					}
-				}
-
-		        .front {
-		        	padding: 6px;
-					float: none;
-			  		position: absolute;
-					top: 0;
-					left: 0;
-					width: inherit;
-					height: inherit;
-			  		z-index: 1;
-			  		@include rotateY(0deg);
-			  		@include backface-visibility(hidden);					
-					@include transform-style(preserve-3d);
-					@include transition(0.5s);
-					background-color: $couponBackgroundColor;
-		        }
-		        .back {
-		        	padding: 6px;
-					float: none;
 					position: absolute;
-					top: 0;
-					left: 0;
-					width: inherit;
-					height: inherit;
-					@include rotateY(-180deg);		
-					@include backface-visibility(hidden);
-					@include transform-style(preserve-3d);
-					@include transition(0.5s);
-		        	background-color: $accentColor;
-		        	color: $couponBackgroundColor;
-		        	h3 {
-		        		font-size: 14px;
-		        		margin: 5px 0 10px;
-		        	}
+					right: 3px;
+					top: 3px;
+					width: 16px;
+					height: 12px;
+					display: block;
+					border-top: 6px solid $accentColor;
+					border-left: 16px solid transparent;
+					@include rotate(20deg);							
+				}
+			}
 
-		        	p {
-		        		font-size: 10px;
-		        		margin-bottom: 5px;
-		        	}
-		        }
+			.double-click {
+				.expand-curl {
+					width: 28px;
+					height: 20px;
+					border-top: 10px solid $accentColor;
+					border-left: 28px solid transparent;
+				}
+			}
 
-				.offer-header {
-					@extend .clearfix;
-					margin-bottom: 12px;
-					margin-top: 4px;
+	        .front {
+	        	padding: 6px;
+				float: left;
+		  		position: absolute;
+				top: 0;
+				left: 0;
+				width: inherit;
+				height: inherit;
+		  		z-index: 1;
+		  		@include rotateY(0deg);
+		  		@include backface-visibility(hidden);					
+				@include transform-style(preserve-3d);
+				@include transition(0.5s);
+				background-color: $couponBackgroundColor;
+	        }
+	        .back {
+	        	padding: 6px;
+				float: left;
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: inherit;
+				height: inherit;
+				@include rotateY(-180deg);		
+				@include backface-visibility(hidden);
+				@include transform-style(preserve-3d);
+				@include transition(0.5s);
+	        	background-color: $accentColor;
+	        	color: $couponBackgroundColor;
+	        	h3 {
+	        		font-size: 14px;
+	        		margin: 5px 0 10px;
+	        	}
 
-					.offer-title {
+	        	p {
+	        		font-size: 10px;
+	        		margin-bottom: 5px;
+	        	}
+	        }
+
+			.offer-header {
+				@extend .clearfix;
+				margin-bottom: 12px;
+				margin-top: 4px;
+
+				.offer-title {
+					float: left;
+					width: 70%;
+
+					img {
+						max-width: 50px;
 						float: left;
-						width: 70%;
-
-						img {
-							max-width: 50px;
-							float: left;
-						}
-						h3 {
-							margin-left: 55px;
-							font-size: 14px;
-							margin-top: 0;
-							margin-bottom: 10px;
-						}
 					}
-					.offer-amount {
-						float: right;
-						display: inline-block;
-						font-size: 24px;
-						font-weight: bold;
-            			color: $accentColor;
-						margin-top: 8px;
+					h3 {
+						margin-left: 55px;
+						font-size: 14px;
+						margin-top: 0;
+						margin-bottom: 10px;
 					}
 				}
-				p.btn-footnote {
-					font-size: 12px;
-					min-height: 50px;
-				}
-				.offer-footer {
-					@extend .clearfix;
-					color: $lightGray;
-					font-size: 11px;
-
-					.expiration-date {
-						@extend .pull-left;
-						line-height: 21px;
-					}					
-
-					.btn-details {
-						font-size: 11px;
-						color: $primaryColor;
-			            padding: 4px;
-			            padding-top: 2px;
-			            padding-bottom: 2px;
-			            border: 1px solid $lightBorder;
-					}
-					.btn-summary {
-						color: #FFF;
-						padding: 2px 8px;
-						border: 2px solid #FFF !important;						
-					}
-				}
-
-				+ .app-offer {
+				.offer-amount {
+					float: right;
+					display: inline-block;
+					font-size: 24px;
+					font-weight: bold;
+        			color: $accentColor;
 					margin-top: 8px;
 				}
+			}
+			p.btn-footnote {
+				font-size: 12px;
+				min-height: 50px;
+			}
+			.offer-footer {
+				@extend .clearfix;
+				color: $lightGray;
+				font-size: 11px;
+
+				.expiration-date {
+					@extend .pull-left;
+					line-height: 21px;
+				}					
+
+				.btn-details {
+					font-size: 11px;
+					color: $primaryColor;
+		            padding: 4px;
+		            padding-top: 2px;
+		            padding-bottom: 2px;
+		            border: 1px solid $lightBorder;
+				}
+				.btn-summary {
+					color: #FFF;
+					padding: 2px 8px;
+					border: 2px solid #FFF !important;						
+				}
+			}
+
+			+ .app-offer {
+				margin-top: 8px;
 			}
 		}
 	}

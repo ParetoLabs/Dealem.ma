@@ -52,7 +52,7 @@ angular.module('dealemmaApp')
         offerSummary: "Offer summary, purchase criteria, participating stores. Lorem ipsum dald kded.",
         offerDetails: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Aenean commodo ligula eget dolor, Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.",
         expirationDate: 1288323623006,
-        imagesSrc: 'images/tide.png'
+        imageSrc: 'images/tide.png'
       },
       {
         id: 2,
@@ -61,7 +61,7 @@ angular.module('dealemmaApp')
         offerSummary: "Offer summary, purchase criteria, participating stores. Lorem ipsum dald kded.",
         offerDetails: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Aenean commodo ligula eget dolor, Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.",
         expirationDate: 1288323623006,
-        imagesSrc: 'images/cheer.png'
+        imageSrc: 'images/cheer.png'
       }
     ];
 
