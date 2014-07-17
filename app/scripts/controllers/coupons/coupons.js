@@ -50,5 +50,20 @@ angular.module('dealemmaApp')
   	// Load the "remote" data.
   	loadRemoteData();
 
+    $scope.doClickCurl = function(index) {
+      // debugger;
+
+      if (index < 0 || index >= $scope.primaryOffers.length)
+        return;
+      var temp = $scope.primaryOffers[index];
+      var len = $scope.primaryOffers.length;
+      $scope.primaryOffers[index] = $scope.primaryOffers[index + len];
+      $scope.primaryOffers[index + len] = temp;
+
+      // $(this)
+      // .animate({left: 15+'%', marginTop: 2+'em'},500, 'easeOutBack',function(){i--;$(this).css('z-index', i)})
+      // .animate({left: 38+'%', marginTop: 0+'em'},500, 'easeOutBack');
+    }
+
   });
   
