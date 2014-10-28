@@ -1,1 +1,71 @@
-<div ng-controller="coupons.CouponsCtrl"> <!-- BEGIN: view --> <!-- Primary Offer --> <div id="PrimaryOffer" class="app-offer"> <div id="box" class="coupon" ng-class="flipCssVar" ng-repeat="offer1 in primaryOffers" hm-swipeleft="flipCssVar=''" hm-swiperight="flipCssVar='flipped'" hm-options="{tap_always: false}"> <div class="front" ng-class="curlCssVar" hm-tap="curlCssVar='one-click'" hm-doubletap="curlCssVar='double-click'" hm-options="{tap_always: false}"> <a class="expand-curl" ng-click="doClickCurl($index)"></a> <div class="offer-header"> <div class="offer-title"> <img ng-src="{{ offer1.imageSrc }}" alt=""> <h3>{{ offer1.offerTitle | characters:25 }}</h3> </div> <span class="offer-amount">{{ offer1.offerAmount }}¢</span> </div> <p class="btn-footnote">{{ offer1.offerSummary | characters: 80 }}</p> <div class="offer-footer"> <div class="expiration-date">Expires: {{ offer1.expirationDate | date:'MM/dd/yyyy' }}</div> <div class="pull-right"><a value="set" class="btn btn-offer btn-details" ng-click="flipCssVar='flipped'">offer details</a></div> </div> </div> <div class="back"> <div class="offer-title"> <h3>Deal Title</h3> </div> <p>{{ offer1.offerDetails }}</p> <div class="offer-footer"> <div class="pull-right"> <a class="btn btn-offer btn-summary" value="clear" ng-click="flipCssVar=''">offer summary</a> </div> </div> </div> </div> </div> <!-- End: Primary Offer --> <!-- Second Offer --> <div id="SencondOffer" class="app-offer"> <div id="box" class="coupon" ng-class="flipCssVar" ng-repeat="offer2 in secondOffers" hm-swipeleft="flipCssVar=''" hm-swiperight="flipCssVar='flipped'" hm-options="{tap_always: false}"> <div class="front" ng-class="curlCssVar" hm-tap="curlCssVar='one-click'" hm-doubletap="curlCssVar='double-click'" hm-options="{tap_always: false}"> <a class="expand-curl" ng-click="doClickCurl($index)"></a> <div class="offer-header"> <div class="offer-title"> <img ng-src="{{ offer2.imageSrc }}" alt=""> <h3>{{ offer2.offerTitle | characters:25 }}</h3> </div> <span class="offer-amount">{{ offer2.offerAmount }}¢</span> </div> <p class="btn-footnote">{{ offer2.offerSummary | characters: 80 }}</p> <div class="offer-footer"> <div class="expiration-date">Expires: {{ offer2.expirationDate | date:'MM/dd/yyyy' }}</div> <div class="pull-right"><a value="set" class="btn btn-offer btn-details" ng-click="flipCssVar='flipped'">offer details</a></div> </div> </div> <div class="back"> <div class="offer-title"> <h3>Deal Title</h3> </div> <p>{{ offer2.offerDetails }}</p> <div class="offer-footer"> <div class="pull-right"> <a class="btn btn-offer btn-summary" value="clear" ng-click="flipCssVar=''">offer summary</a> </div> </div> </div> </div> </div> <!-- END: Second Offer --> <!-- END: view --> </div>
+<div ng-controller="coupons.CouponsCtrl">
+	<!-- BEGIN: view -->
+
+	<!-- Primary Offer -->
+	<div id="PrimaryOffer" class="app-offer">
+		<div id="box" class="coupon" ng-class="flipCssVar" ng-repeat="offer1 in primaryOffers" hm-swipeleft="flipCssVar=''" hm-swiperight="flipCssVar='flipped'" hm-options="{tap_always: false}">
+			<div class="front" ng-class="curlCssVar" hm-tap="curlCssVar='one-click'" hm-doubletap="curlCssVar='double-click'" hm-options="{tap_always: false}">
+				<a class="expand-curl" ng-click="doClickCurl($index)"></a>
+				<div class="offer-header">
+				    <div class="offer-title">
+				      <img ng-src="{{ offer1.imageSrc }}" alt="">
+				      <h3>{{ offer1.offerTitle | characters:25 }}</h3>
+				    </div>
+				    <span class="offer-amount">{{ offer1.offerAmount }}¢</span>
+				</div>
+				<p class="btn-footnote">{{ offer1.offerSummary | characters: 80 }}</p>
+				<div class="offer-footer">
+				    <div class="expiration-date">Expires: {{ offer1.expirationDate | date:'MM/dd/yyyy' }}</div>
+				    <div class="pull-right"><a value="set" class="btn btn-offer btn-details" ng-click="flipCssVar='flipped'">offer details</a></div>
+				</div>
+			</div>
+			<div class="back">
+				<div class="offer-title">
+					<h3>Deal Title</h3>
+				</div>
+				<p>{{ offer1.offerDetails }}</p>
+				<div class="offer-footer">
+					<div class="pull-right">
+						<a class="btn btn-offer btn-summary" value="clear" ng-click="flipCssVar=''">offer summary</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!-- End: Primary Offer -->
+
+	<!-- Second Offer -->
+	<div id="SencondOffer" class="app-offer">
+		<div id="box" class="coupon" ng-class="flipCssVar" ng-repeat="offer2 in secondOffers" hm-swipeleft="flipCssVar=''" hm-swiperight="flipCssVar='flipped'" hm-options="{tap_always: false}">
+			<div class="front" ng-class="curlCssVar" hm-tap="curlCssVar='one-click'" hm-doubletap="curlCssVar='double-click'" hm-options="{tap_always: false}">
+				<a class="expand-curl" ng-click="doClickCurl($index)"></a>
+				<div class="offer-header">
+				    <div class="offer-title">
+				      <img ng-src="{{ offer2.imageSrc }}" alt="">
+				      <h3>{{ offer2.offerTitle | characters:25 }}</h3>
+				    </div>
+				    <span class="offer-amount">{{ offer2.offerAmount }}¢</span>
+				</div>
+				<p class="btn-footnote">{{ offer2.offerSummary | characters: 80 }}</p>
+				<div class="offer-footer">
+				    <div class="expiration-date">Expires: {{ offer2.expirationDate | date:'MM/dd/yyyy' }}</div>
+				    <div class="pull-right"><a value="set" class="btn btn-offer btn-details" ng-click="flipCssVar='flipped'">offer details</a></div>
+				</div>
+			</div>
+			<div class="back">
+				<div class="offer-title">
+					<h3>Deal Title</h3>
+				</div>
+				<p>{{ offer2.offerDetails }}</p>
+				<div class="offer-footer">
+					<div class="pull-right">
+						<a class="btn btn-offer btn-summary" value="clear" ng-click="flipCssVar=''">offer summary</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!-- END: Second Offer -->
+
+	<!-- END: view -->	
+</div>
